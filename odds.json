@@ -1,0 +1,12 @@
+[
+    {"rune_id": 1, "rune":"Ber", "drop rate":3},
+    {"rune_id": 2, "rune":"Sur", "drop rate":11},
+    {"rune_id": 3, "rune":"Lo", "drop rate":2},
+    {"rune_id": 4, "rune":"Ohm", "drop rate":5},
+    {"rune_id": 5, "rune":"Vex", "drop rate":6},
+    {"rune_id": 6, "rune":"Gul", "drop rate":11},
+    {"rune_id": 7, "rune":"Ist", "drop rate":7},
+    {"rune_id": 8, "rune":"Mal", "drop rate":15},
+    {"rune_id": 9, "rune":"Um", "drop rate":10},
+    {"rune_id": 10, "rune":"Pul", "drop rate":14}
+]
