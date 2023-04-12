@@ -3,23 +3,28 @@ import json
 import random
 
 chest_patterns = 65536
-rune_patterns = []
+# rune_patterns = []
 
 # opening odds file
 with open('odds.json') as json_file:
     runes = json.load(json_file)
 
-for rune in runes:
-    i = 0
-    rune_id = rune['rune_id']
-    rune_name = rune['rune']
-    while i < rune['drop rate']:
-        randomnumber = random.randint(1, chest_patterns)
-        rune_patterns.append({"rune_id": rune_id, "rune_name": rune_name, "pattern_id": randomnumber})
-        i = i + 1
+'''
+Used when the rune_patterns.json has not been initialized
+Will auto assign chest patterns to rune drops fitting with how many
+patterns there are per rune.
+'''
+# for rune in runes:
+#     i = 0
+#     rune_id = rune['rune_id']
+#     rune_name = rune['rune']
+#     while i < rune['drop rate']:
+#         randomnumber = random.randint(1, chest_patterns)
+#         rune_patterns.append({"rune_id": rune_id, "rune_name": rune_name, "pattern_id": randomnumber})
+#         i = i + 1
 
-with open('rune_patterns.json', 'w') as fout:
-    json.dump(rune_patterns, fout)
+# with open('rune_patterns.json', 'w') as fout:
+#     json.dump(rune_patterns, fout)
 
 # opening runes file
 with open('rune_patterns.json') as rune_patterns_json_file:
